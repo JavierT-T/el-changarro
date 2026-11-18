@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Changarro - Crear Publicación</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Creacion_Publicacion.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-brand"><h1>El Changarro</h1></div>
+        <nav class="nav-links">
+            <a href="catalogo-1.html">Categorías</a>
+            <a href="Comercios_Locales.html">Comercios Locales</a>
+            <a href="Trueque.html">Trueque</a>
+            <a href="Buscador.html">Explorar Catálogo</a>
+            <a href="Creacion_Publicacion.html" class="active btn-nav-crear">+ Crear Publicación</a>
+            <a href="Login.html" class="logout-link">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="publish-container">
+            <div class="publish-header">
+                <a href="Buscador.html" class="back-link">&larr;</a>
+                <h2>Crear Publicación</h2>
+            </div>
+
+            <form class="publish-card">
+                <h3>Detalles Básicos</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Título del artículo</label>
+                        <input type="text" placeholder="Ej. Bicicleta urbana">
+                    </div>
+                    <div class="form-group">
+                        <label>Categoría</label>
+                        <select class="form-select">
+                            <option>Ropa y Artesanías</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">Atributos del Artículo</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Talla</label>
+                        <select class="form-select">
+                            <option>M, L, XL</option>
+                            <option>Chico / S</option>
+                            <option>Unitalla</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Color</label>
+                        <div class="color-picker-row">
+                            <span class="dot black active"></span>
+                            <span class="dot dark-blue"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot red"></span>
+                            <span class="dot purple"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Marca</label>
+                        <input type="text" placeholder="Marca">
+                    </div>
+                    <div class="form-group">
+                        <label>Material</label>
+                        <select class="form-select">
+                            <option>Algodón</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Imágenes</label>
+                    <div class="images-upload-box">
+                        <div>
+                            <span class="img-slot">📷</span>
+                            <span class="img-slot">📁</span>
+                        </div>
+                        <p>Arrastra y suelta tus fotos aquí o haz clic</p>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-row">
+                    <input type="checkbox" id="trueque" checked>
+                    <label for="trueque">¿Acepta Trueque?</label>
+                </div>
+                <p class="small-hint">Truequear este artículo no restringe efectivo y acepta relaciones en base de datos.</p>
+
+                <div class="publish-actions">
+                    <button type="button" class="btn-secondary" onclick="window.location.href='Buscador.html'">Guardar Borrador</button>
+                    <button type="submit" class="btn-primary" onclick="event.preventDefault(); window.location.href='Buscador.html';">Publicar Artículo</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
