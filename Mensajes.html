@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Changarro - Panel de Control</title>
+    <link rel="stylesheet" href="css/Mensaje.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Navegación -->
+        <header class="navbar">
+            <div class="logo">
+                <span class="icon-leaf">🌿</span> El Changarro
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active"><span class="icon">⊞</span> Panel</a>
+                <a href="#"><span class="icon">↺</span> Historial</a>
+                <a href="#"><span class="icon">✉</span> Mensajes</a>
+                <a href="catalogo-1.html">Categorías</a>
+            </nav>
+            <div class="user-profile">
+                <span class="notification-badge">3</span>
+                <img src="avatar.jpg" alt="Perfil" class="avatar-sm">
+            </div>
+        </header>
+
+        <!-- Sección de Transacciones (Relacional) -->
+        <section class="section-card">
+            <h2 class="section-title">Mis Transacciones</h2>
+            <div class="table-responsive">
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Tipo</th>
+                            <th>Usuario</th>
+                            <th>Estado</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historial-transacciones">
+                        <!-- Generado por JS -->
+                        <tr>
+                            <td>Bicicleta Vintage</td>
+                            <td>🛒 Compra</td>
+                            <td>Sanrat</td>
+                            <td><span class="badge badge-success">Completado</span></td>
+                            <td>01/12/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Taladro Inalámbrico</td>
+                            <td>⇄ Trueque</td>
+                            <td>Yahrat</td>
+                            <td><span class="badge badge-warning">Pendiente</span></td>
+                            <td>15/12/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Clases de Mate</td>
+                            <td>⇄ Trueque</td>
+                            <td>Batrio Matteria</td>
+                            <td><span class="badge badge-danger">Cancelado</span></td>
+                            <td>21/12/2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección de Mensajes (No Relacional / MongoDB) -->
+        <section class="section-card">
+            <h2 class="section-title">Mis Mensajes</h2>
+            <div class="chat-container">
+                <!-- Lista de Contactos -->
+                <aside class="chat-sidebar" id="lista-contactos">
+                    <div class="contact-item active">
+                        <img src="avatar1.jpg" alt="Batrio" class="avatar-md">
+                        <div class="contact-info">
+                            <div class="contact-header">
+                                <span class="contact-name">Batrio Matteria</span>
+                                <span class="contact-time">12:39 AM</span>
+                            </div>
+                            <span class="contact-last-msg">Último mensaje: Bricatta d...</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="avatar2.jpg" alt="Colilia" class="avatar-md">
+                        <div class="contact-info">
+                            <div class="contact-header">
+                                <span class="contact-name">Colilia Cantapa</span>
+                                <span class="contact-time">12:39 AM</span>
+                            </div>
+                            <span class="contact-last-msg">Último mensaje: Camprr tu...</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Área de Chat Activo -->
+                <main class="chat-main">
+                    <div class="chat-header">
+                        <div class="chat-user-info">
+                            <img src="avatar1.jpg" alt="Batrio" class="avatar-md">
+                            <div>
+                                <strong>Batrio Matteria</strong>
+                                <span class="status-online">● online</span>
+                            </div>
+                        </div>
+                        <div class="chat-actions">
+                            <button class="btn-icon">📞</button>
+                            <button class="btn-icon">📹</button>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="contenedor-mensajes">
+                        <div class="message received">
+                            <span class="msg-sender">Batrio</span>
+                            <p>¿Qué ofreces a cambio del taladro?</p>
+                        </div>
+                        <div class="message sent">
+                            <span class="msg-sender">Tú</span>
+                            <p>Tengo una bicicleta vintage en buen estado.</p>
+                        </div>
+                        <div class="message received">
+                            <span class="msg-sender">Batrio</span>
+                            <p>Me interesa. ¿Podemos vernos mañana?</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <input type="text" id="input-mensaje" placeholder="Enviar un mensaje..." autocomplete="off">
+                        <button class="btn-icon">📎</button>
+                        <button class="btn-send" id="btn-enviar">➤</button>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
