@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Changarro - Confirmación de Trueque</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Trueque.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <h1>El Changarro</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="catalogo-1.html">Categorías</a>
+            <a href="Comercios_Locales.html">Comercios Locales</a>
+            <a href="Trueque.html" class="active">Trueque</a>
+            <a href="Login.html" class="logout-link">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-container">
+        <div class="page-header">
+            <h2>Confirmación de Trueque</h2>
+        </div>
+
+        <!-- Layout de 2 columnas (Izquierda: Vendedor + Artículo | Derecha: Resumen) -->
+        <div class="trade-layout">
+            
+            <!-- Columna Izquierda -->
+            <div class="trade-left">
+                
+                <!-- Tarjeta: Detalles del Vendedor -->
+                <div class="trade-card">
+                    <h3 class="card-section-title">Detalles del Vendedor</h3>
+                    <div class="seller-info">
+                        <div class="seller-initials">AR</div>
+                        <div class="seller-meta">
+                            <div class="seller-badges">
+                                <span class="badge-verified">✔ Verificado</span>
+                                <span class="seller-stars">⭐ 4.8</span>
+                            </div>
+                            <h4>Alex 'Eco_Trader' R.</h4>
+                            <p>Miembro desde 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Detalles del Artículo -->
+                <div class="trade-card">
+                    <h3 class="card-section-title">Detalles del Artículo</h3>
+                    <div class="item-info">
+                        <div class="item-image-placeholder">
+                            <span>🚲</span>
+                        </div>
+                        <div class="item-specs">
+                            <h4>Bicicleta Urbana Vintage Verde</h4>
+                            <p class="item-condition">Usada · Excelente Estado</p>
+                            <p class="item-desc">Cuadro: Acero, talla L | 3 velocidades, incluye canastilla delantera de mimbre.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna Derecha: Resumen del Trueque -->
+            <div class="trade-right">
+                <div class="trade-card summary-card">
+                    <h3 class="card-section-title">Resumen del Trueque</h3>
+                    
+                    <div class="summary-row">
+                        <span class="summary-icon">📅</span>
+                        <div>
+                            <small>Tipo de Transacción</small>
+                            <p>Compra y Solicitud de Trueque</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-row">
+                        <span class="summary-icon">💵</span>
+                        <div>
+                            <small>Monto Total</small>
+                            <p class="price-highlight">$450.00 MXN / EcoCréditos</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-row">
+                        <span class="summary-icon">🚚</span>
+                        <div>
+                            <small>Entrega Estimada</small>
+                            <p>28 Nov - 30 Nov</p>
+                        </div>
+                    </div>
+
+                    <a href="catalogo-1.html" class="btn-confirm-trade">
+                        CONFIRMAR TRUEQUE Y ORDEN &gt;
+                    </a>
+
+                    <div class="terms-link">
+                        <a href="#">Revisar Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página discreto -->
+    <footer class="simple-footer">
+        <div class="footer-links">
+            <a href="#">Centro de Ayuda</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Contacto</a>
+            <a href="#">Política de Privacidad</a>
+        </div>
+        <p>© 2026 El Changarro</p>
+    </footer>
+
+</body>
+</html>
